@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@400;500&family=Ubuntu:wght@300;400;500&display=swap');
+
+/* *common css starts here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+/* *FONT STARTS HERE */
+    --primary-font: 'Ubuntu', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --third-font: 'Abril Fatface', cursive;
+/* *FONT ENDS HERE */
+
+/* *COLOR STARTS HERE */
+    --primary-color: #0f2f44;
+    --secondary-color: #ffc712;
+    --third-color: #f5f5f5;
+    --fourth-color: #f5f5f5;
+    --fiveth-color: #eeeeee;
+/* *COLOR ENDS HERE */
+     
+}
+
+body{
+    font-family: var(--primary-font);
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* *common css ends here */
+
+
+
+
+
+/* *TOB HEADER STARTS HERE */
+
+#tob_header{
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+#tob_header .Welcome{
+    width: 50%;
+    text-align: left;
+    padding: 23px 0px;
+    font-weight: 400;
+    font-family: var(--primary-font);
+    font-size: 16px;
+}
+
+#tob_header .Opening{
+    width: 50%;
+    text-align: right;
+    padding: 25px 0px;
+    font-weight: 400;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-size: 16px;
+}
+
+
+/* *TOB HEADER ENDS HERE */
+
+
+
+
+
+/* *NAVBER STARTS HERE */
+
+.align-center{
+    align-items: center;
+}
+
+#navber .logo{
+    width: 45%;
+}
+
+#navber .home{
+    width: 45%;
+    text-align: center;
+}
+#navber .icon{
+    width: 10%;
+    text-align: right;
+}
+#navber ul li{
+    display: inline-block;
+    padding: 40px 10px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: var(--primary-font);
+}
+
+#navber ul li a{
+    color: var(--primary-color);
+    position: relative;
+    
+}
+
+#navber ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    background-color: var(--primary-color);
+    height: 3px;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    
+}
+#navber ul li a:hover::after{
+    width: 100%;
+    border-radius: 5px;
+}
+#navber .icon span{
+    margin: 0 30px;
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+#navber .icon i{
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+/* *NAVBER ENDS HERE */
+
+
+
+
+
+
+/* *BANNER STARTS HERE */
+
+#banner .container{
+    height: 100%;
+}
+#banner .row{
+    height: 100%;
+}
+
+#banner .banner_image{
+    background-image: url(../image/banner.webp);
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#banner .banner_cnt{
+    width: 50%;
+    display: inline-block;
+}
+#banner .banner_cnt h3{
+    font-size: 40px;
+    font-weight: 300;
+    font-family: var(--primary-font);
+}
+#banner .banner_cnt h2{
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: var(--third-font);
+    color: var(--primary-color);
+}
+#banner .banner_cnt h4{
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 14px;
+    color: #9999cc;
+}
+#banner .banner_cnt p{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    margin: 30px 0px;
+}
+#banner .banner_cnt a{
+    background-color: #9999cc;
+    padding: 16px 20px;
+    border-radius: 5px;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 15px 0px;
+    display: inline-block
+}
+#banner .banner_cnt i{
+    padding: 15px 19px;
+    color: #9999cc;
+    background-color: #ffffff;
+    border-radius: 300px;
+    font-size: 20px;
+    margin: 0px 22px;
+}
+
+/* *BANNER ENDS HERE */
+
+
+
+
+
+/* *About-us starts here */
+
+#About-us .About-us-text{
+    width: 50%;
+    margin: 106px 0px;
+}
+
+#About-us .About-us-text h4{
+    font-weight: 400;
+    font-size: 14px;
+    font-family: var(--primary-font);
+}
+
+#About-us .About-us-text h1{
+    font-size: 32px;
+    text-transform: capitalize;
+    font-family: var(--third-font);
+    color: var(--primary-color);
+}
+
+#About-us .About-us-text span{
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    margin: 33px 0px;
+    font-weight: 400;
+}
+#About-us .About-us-text p{
+    line-height: 10px;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 32px ;
+}
+
+#About-us .About-us-text a{
+    background-color: #ffffff;
+    padding: 16px 20px;
+    border-radius: 5px;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin: 15px 0px;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
+}
+#About-us .About-us-text span a{
+    margin: 0px 20px;
+}
+#About-us .About-us-text a:hover{
+    background-color: var(--primary-color);
+    color: #ffffff;
+    box-shadow: none;
+}
+
+#About-us .About-us-image{
+    width: 50%;
+    margin: 106px 0px;
+}
+
+/* *About-us ends here */
+
+
+
+
+/* *Our Skills starts here */
+
+
+
+#Our-Skills{
+    width: 80%;
+    margin: auto;
+}
+#Our-Skills .image-1{
+    width: 50%;
+    margin: 100px 0px;
+}
+
+#Our-Skills .image-2{
+    width: 50%;
+    text-align: right;
+    margin: 100px 0;
+
+}
+
+#Our-Skills .image-2 h4{
+    font-weight: 400;
+    font-size: 14px;
+    font-family: var(--primary-font);
+}
+
+#Our-Skills .image-2 h1{
+    font-size: 32px;
+    text-transform: capitalize;
+    font-family: var(--third-font);
+    color: var(--primary-color);
+}
+
+#Our-Skills .image-2 p{
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    margin: 25px 0px;
+    font-weight: 400;
+}
+
+
+
+
+/* *Our Skills ends here */
